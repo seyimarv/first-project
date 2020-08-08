@@ -1,0 +1,22 @@
+body {
+    background-color: grey;
+}
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+    animation-iteration-count: 1
+    animation-fill-mode: forwards;
+}
+
+@keyframes myanimation {
+    0%  {background: white; border-radius: 0 0 0 0;}
+    25% {background: red; border-radius: 50% 0 0 0;}
+    50% {background: blue; border-radius: 50% 50% 0 0;}
+    75% {background: yellow;  border-radius: 50% 50% 50% 0;}
+    100% {background: white; border-radius: 50% 50% 50% 50%;}
+    
+}
