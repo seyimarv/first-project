@@ -1,0 +1,22 @@
+body {
+    background: black;
+}
+.box{
+    background: whitesmoke;
+    color: black;
+    width: 200px;
+    position: relative;
+    margin: auto;
+    height: 200px;
+    top: 200px;
+    transition-property: background, border-radius, transform;
+    transition-duration: 1s, 3s, 4s;
+}
+.box:hover{
+    background: red;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+#readmore {
+    transform: rotateY(180deg);
+}

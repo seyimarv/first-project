@@ -1,0 +1,61 @@
+body {
+    margin: auto;
+    padding: 0px;
+    background-color: blueviolet;
+    text-align: center;
+    line-height: 1.6em;
+}
+#head {
+    height: 200px;
+}
+#head h1 {
+        font-size: 50px;
+        animation-name: heading;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        position: relative;
+}
+@keyframes heading {
+    0% {top: -50px}
+    100% {top: 150px}
+}
+#content {
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+    padding: 0 30px;
+    animation-name: content;
+    animation-duration: 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+@keyframes content {
+    0% {left: -1000px}
+    100% {left: 0px}
+}
+#readmore {
+    text-align: center;
+    max-width: 960;
+    border: 2px solid purple;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100px;
+    background-color: red;
+    animation-name: read;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+@keyframes read {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+#readmore:hover {
+    transform: scale(1.1)
+    
+}
